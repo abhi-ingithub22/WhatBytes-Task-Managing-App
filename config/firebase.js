@@ -1,0 +1,14 @@
+// Firebase Configuration
+// Replace FIREBASE_API_KEY with your actual Firebase API key
+export const FIREBASE_CONFIG = {
+    API_KEY: 'AIzaSyClsu2K_m5rC9m1LVVaHzxuPM0fV0HBWqA', // Replace with your Firebase API key
+    AUTH_DOMAIN: 'task-manager-app-bbedf.firebaseapp.com', // Replace with your project domain
+    PROJECT_ID: 'task-manager-app-bbedf', // Replace with your project ID
+};
+
+// Firebase Auth REST API endpoints
+export const FIREBASE_AUTH_ENDPOINTS = {
+    SIGN_UP: `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${FIREBASE_CONFIG.API_KEY}`,
+    SIGN_IN: `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${FIREBASE_CONFIG.API_KEY}`,
+    REFRESH_TOKEN: `https://securetoken.googleapis.com/v1/token?key=${FIREBASE_CONFIG.API_KEY}`,
+};
